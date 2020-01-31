@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+  h1.details-title {
+    margin-left: .75rem;
+  }
+}
+
+.list-unstyled {
+  margin-bottom: 0;
+}

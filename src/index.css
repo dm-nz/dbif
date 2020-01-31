@@ -1,0 +1,65 @@
+.content {
+  padding-top: .75rem;
+  padding-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+h1,
+.navbar-brand {
+  font-family: Lusitana, Georgia, serif;
+  font-weight: bold;
+}
+
+a,
+.page-link {
+  color: #007999;
+}
+
+a:hover,
+.page-link:hover {
+  color: #005066;
+}
+
+@media (min-width: 1024px) {
+  .collapse.uncollapse-lg {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}
+
+.table tr td:first-of-type {
+  width: 30%;
+}
+
+.grid .col {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 576px) {
+  .grid .col {
+    margin-bottom: 30px;
+  }
+}
+
+a.tile {
+  display: block;
+  padding: 1rem 1.25rem;
+  background: #e8eeee;
+  border-radius: 4px;
+  color: inherit;
+  transition: 0.5s;
+  height: 100%;
+}
+
+a.tile:hover {
+  text-decoration: none;
+  box-shadow: 0 .125rem .75rem rgba(0,0,0,.15) !important;
+  background: white;
+}

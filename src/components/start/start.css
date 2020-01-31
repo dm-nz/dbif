@@ -1,0 +1,6 @@
+#start .card a.card-body img {
+  max-height: 260px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
