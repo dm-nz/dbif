@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import CharacterItem from '../character-item';
 
 const CharactersGrid = ({items}) => {
@@ -11,6 +12,10 @@ const CharactersGrid = ({items}) => {
       {characters}
     </div>
   )
+}
+
+CharactersGrid.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 export default CharactersGrid;

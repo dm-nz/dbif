@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
 const BookItem = ({title, index}) => {
@@ -12,6 +13,11 @@ const BookItem = ({title, index}) => {
       </div>
     </div>
   )
+}
+
+BookItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  index: PropTypes.string.isRequired
 }
 
 export default BookItem;

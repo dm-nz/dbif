@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
 const Pagination = ({currentPage, onChangePage, section, length}) => {
@@ -20,6 +21,13 @@ const Pagination = ({currentPage, onChangePage, section, length}) => {
       </ul>
     </nav>
   )
+}
+
+Pagination.propTypes = {
+  currentPage: PropTypes.string.isRequired,
+  onChangePage: PropTypes.func.isRequired,
+  section: PropTypes.string.isRequired,
+  length: PropTypes.number.isRequired
 }
 
 export default Pagination;

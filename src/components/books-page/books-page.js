@@ -1,9 +1,13 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import ApiService from '../../services/api-service';
 import BookItem from '../book-item';
 import Pagination from  '../pagination';
 
 export default class BooksPage extends Component {
+  static propTypes = {
+    pageNum: PropTypes.string
+  }
 
   apiService = new ApiService();
 

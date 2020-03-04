@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import HouseItem from '../house-item';
 
 const HousesGrid = ({items}) => {
@@ -11,6 +12,10 @@ const HousesGrid = ({items}) => {
       {houses}
     </div>
   )
+}
+
+HousesGrid.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 export default HousesGrid;

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import ApiService from '../../services/api-service';
 import Moment from 'react-moment';
 import TableRow from '../table-row';
@@ -7,6 +8,10 @@ import Error from '../error';
 import './item-details.css';
 
 export default class ItemDetails extends Component {
+  static propTypes = {
+    itemId: PropTypes.string.isRequired,
+    section: PropTypes.string.isRequired
+  }
 
   apiService = new ApiService();
 

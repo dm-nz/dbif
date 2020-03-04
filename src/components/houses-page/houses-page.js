@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import ApiService from '../../services/api-service';
 import HousesGrid from '../houses-grid';
 import HousesFilter from '../houses-filter';
@@ -6,6 +7,10 @@ import Pagination from  '../pagination';
 import {Redirect} from 'react-router-dom';
 
 export default class HousesPage extends Component {
+  static propTypes = {
+    pageNum: PropTypes.string
+  }
+
   state = {
     houses: [],
     name: '',
@@ -20,7 +25,7 @@ export default class HousesPage extends Component {
     isToggleOn: false
   }
 
-  apiService = new ApiService();  
+  apiService = new ApiService();
 
   getHouses(pageNum = this.props.pageNum, name = this.state.name, region = this.state.region, words = this.state.words, hasWords = this.state.hasWords, hasTitles = this.state.hasTitles, hasSeats = this.state.hasSeats, hasDiedOut = this.state.hasDiedOut, hasAncestralWeapons = this.state.hasAncestralWeapons) {
     let items = null;

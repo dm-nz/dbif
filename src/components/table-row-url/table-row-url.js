@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import LinkedList from '../linked-list';
 
 const TableRowUrl = ({label, value}) => {
@@ -16,6 +17,21 @@ const TableRowUrl = ({label, value}) => {
       <td><LinkedList items={value} /></td>
     </tr>
   )
+}
+
+TableRowUrl.propTypes = {
+  value: PropTypes.oneOfType([
+    PropTypes.shape({
+      name: PropTypes.string,
+      id: PropTypes.string
+    }),
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string,
+        id: PropTypes.string
+      })
+    )
+  ])
 }
 
 export default TableRowUrl;

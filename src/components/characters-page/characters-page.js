@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import ApiService from '../../services/api-service';
 import CharactersGrid from '../characters-grid';
 import Pagination from  '../pagination';
@@ -6,6 +7,10 @@ import CharactersFilter from '../characters-filter';
 import {Redirect} from "react-router-dom";
 
 export default class CharactersPage extends Component {
+  static propTypes = {
+    pageNum: PropTypes.string
+  }
+
   state = {
     characters: [],
     name: '',

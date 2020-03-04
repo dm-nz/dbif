@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const List = ({items}) => {
   if (items) {
@@ -8,6 +9,10 @@ const List = ({items}) => {
       </ul>
     )
   } else return null;
+}
+
+List.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.string)
 }
 
 export default List;

@@ -1,8 +1,15 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import './house-item.css';
 
 export default class HouseItem extends Component {
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    index: PropTypes.string.isRequired,
+    region: PropTypes.string
+  }
+
   state = {
     fallbackSigil: false
   }

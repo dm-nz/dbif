@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import './start-item.css';
 
@@ -13,6 +14,12 @@ const StartItem = ({image, title, path}) => {
       </div>
     </div>
   )
+}
+
+StartItem.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired
 }
 
 export default StartItem;
