@@ -1,0 +1,44 @@
+#intro {
+  position: relative;
+  padding: 3.5rem 0 3rem;
+  background-color: #17333e;
+  background-image: url('/img/intro-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  color: $white;
+  border-radius: 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 6rem 0 7.5rem;
+  }
+
+  h1 {
+    font-weight: normal;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 1.6rem;
+    }
+
+    @include media-breakpoint-only(sm) {
+      font-size: 2rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 3.7rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .lead {
+      font-size: 1.6rem;
+    }
+  }
+
+  .text-muted {
+    color: #6495a0 !important;
+  }
+
+  .row {
+    align-items: center;
+  }
+}

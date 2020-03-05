@@ -1,6 +1,5 @@
 import React from 'react';
 import StartItem from '../start-item';
-import './start.css';
 
 const Start = () => {
   return (

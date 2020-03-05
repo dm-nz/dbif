@@ -5,7 +5,6 @@ import Moment from 'react-moment';
 import TableRow from '../table-row';
 import TableRowUrl from '../table-row-url';
 import Error from '../error';
-import './item-details.css';
 
 export default class ItemDetails extends Component {
   static propTypes = {

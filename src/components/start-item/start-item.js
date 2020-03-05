@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
-import './start-item.css';
 
 const StartItem = ({image, title, path}) => {
   return (

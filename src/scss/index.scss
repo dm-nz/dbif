@@ -1,0 +1,52 @@
+// Custom variables
+@import './variables.scss';
+
+// Bootstrap required
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+// Bootstrap optional
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/tables';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+// @import '~bootstrap/scss/code';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/transitions';
+// @import '~bootstrap/scss/dropdown';
+// @import '~bootstrap/scss/button-group';
+@import '~bootstrap/scss/input-group';
+@import '~bootstrap/scss/custom-forms';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+// @import '~bootstrap/scss/breadcrumb';
+@import '~bootstrap/scss/card';
+@import '~bootstrap/scss/pagination';
+// @import '~bootstrap/scss/badge';
+@import '~bootstrap/scss/jumbotron';
+// @import '~bootstrap/scss/alert';
+// @import '~bootstrap/scss/progress';
+// @import '~bootstrap/scss/media';
+// @import '~bootstrap/scss/list-group';
+// @import '~bootstrap/scss/close';
+// @import '~bootstrap/scss/modal';
+// @import '~bootstrap/scss/tooltip';
+// @import '~bootstrap/scss/popover';
+// @import '~bootstrap/scss/carousel';
+@import '~bootstrap/scss/utilities';
+// @import '~bootstrap/scss/print';
+
+// Custom styles
+@import './custom.scss';
+
+// Components
+@import '../components/footer/footer.scss';
+@import '../components/header/header.scss';
+@import '../components/house-item/house-item.scss';
+@import '../components/intro/intro.scss';
+@import '../components/item-details/item-details.scss';
+@import '../components/start/start.scss';
