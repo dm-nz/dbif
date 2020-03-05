@@ -94,22 +94,26 @@ export default class ItemDetails extends Component {
   render() {
     const {data, hasImage, hasError} = this.state;
     const {section, itemId, imageType='jpg'} = this.props;
+    let name = data.name;
+    if (!data.name) {
+      name = data.aliases;
+    }
     let released = null;
     if (data.released) {
       released = <Moment format="MMMM DD, YYYY">{data.released}</Moment>;
     }
-    document.title = data.name;
+    document.title = name;
     if (hasError) return <Error />;
     return (
       <div id="item-details" className="content container">
         <div className="row">
         {hasImage ? (
           <div className="col-md-3">
-            <img onError={() => this.noImage()} src={`/img/${section}/${itemId}.${imageType}`} alt={data.name} className="img-fluid mb-4" />
+            <img onError={() => this.noImage()} src={`/img/${section}/${itemId}.${imageType}`} alt={name} className="img-fluid mb-4" />
           </div>
         ) : null}
           <div className="col">
-            <h1 className="details-title mb-4">{data.name}</h1>
+            <h1 className="details-title mb-4">{name}</h1>
             <table className="table">
               <tbody>
                 <TableRow label='ISBN' value={data.isbn} />
